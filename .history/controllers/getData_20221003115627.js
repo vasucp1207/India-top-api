@@ -29,6 +29,7 @@ const sendResponse = (html, $) => {
             })
         }
     })
+
     return data
 }
 
@@ -94,7 +95,6 @@ const King = (req, res) => {
             res.json(scnt)
         });
 }
-
 const scientist = (req, res) => {
     const id = req.params.id;
     let ScientistsData = [];
@@ -135,6 +135,8 @@ const scientist = (req, res) => {
             res.json(scnt)
 
         });
+
+
 }
 
 const movies = (req, res) => {
@@ -164,8 +166,11 @@ const movies = (req, res) => {
                     summary,
                     the_big_scene
                 })
+
             })
+
             res.json(moviesData)
+
         })
 }
 

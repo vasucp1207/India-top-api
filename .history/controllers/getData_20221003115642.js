@@ -164,8 +164,11 @@ const movies = (req, res) => {
                     summary,
                     the_big_scene
                 })
+
             })
+
             res.json(moviesData)
+
         })
 }
 

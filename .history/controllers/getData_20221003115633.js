@@ -135,6 +135,8 @@ const scientist = (req, res) => {
             res.json(scnt)
 
         });
+
+
 }
 
 const movies = (req, res) => {
@@ -164,8 +166,11 @@ const movies = (req, res) => {
                     summary,
                     the_big_scene
                 })
+
             })
+
             res.json(moviesData)
+
         })
 }
 
